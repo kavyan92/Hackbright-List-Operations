@@ -45,7 +45,7 @@ For example:
 
     """
 
-    input_list += [value]
+    # input_list += [value]
 
 
 def custom_extend(input_list, second_list):
@@ -63,8 +63,8 @@ def custom_extend(input_list, second_list):
         True
 
     """
-    for item in second_list:
-        input_list += [item]
+    # for item in second_list:
+    #     input_list += [item]
 
 
 
@@ -82,15 +82,23 @@ def custom_insert(input_list, index, value):
         True
 
     """
-    new_list = []
-    for item in input_list:
-        # i = item.index(item)
-        if index(item) >= index:
-            new_list.append(item)
-        
-    input_list[index] = value    
-    custom_append(input_list, new_list)
+    # new_list = []
+    # i = 0
+    # for i in range(len(input_list) + 1):
+    #     print(i)
+    #     if i < index:
+    #         new_list.append(input_list[i])
+    #         # i += 1
+    #     elif i == index:
+    #         new_list.append(value)
+    #         # i += 1
+    #     elif i > index:
+    #         new_list.append(input_list[i - 1])
+    #         # i += 1 
+    #     print(new_list)
+    # input_list = new_list
 
+    input_list[index:index] = [value]
 
 def custom_remove(input_list, value):
     """Remove the first item of the value in list.
